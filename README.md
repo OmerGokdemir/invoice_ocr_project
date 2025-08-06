@@ -66,6 +66,7 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 *   `extracted_invoices.xlsx` — Excel file with the same data for easier analysis
 
+****
 
 ## ⚙️ How it works
 
@@ -77,11 +78,15 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 *   Aggregates data from all PDFs into structured tabular format
 
+****
+
 ## 👤 Customization
 
 *   Modify `INPUT_DIR`, `OUTPUT_CSV`, `OUTPUT_XLSX` in the script to change input/output paths
 
 *   Update regex patterns in `extract_data_from_text()` for different invoice formats or to extract additional fields
+
+****
 
 ## 🧪 Troubleshooting
 
@@ -94,13 +99,19 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 *   **Performance issues?**
     Processing scanned PDFs can be slow; consider batching files or optimizing OCR parameters
 
+****
+
 ## 📄 License
 
 [MIT License](LICENCE) — free to use and modify.
 
+****
+
 ## 📩 Contact
 
 For questions or improvements, feel free to reach out!
+
+****
 
 # Summary
 
