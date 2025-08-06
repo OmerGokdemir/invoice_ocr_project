@@ -135,7 +135,7 @@ Bu Python projesi, OCR (Optik Karakter Tanıma) kullanarak taranmış PDF fatura
 
 * Python 3.x
 
-* Tesseract OCR yüklü ve sistem PATH’ine eklenmiş olmalı (ya da scriptte açıkça belirtilmeli)
+* [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) yüklü ve sistem PATH’ine eklenmiş olmalı (ya da scriptte açıkça belirtilmeli)
 
 * Gerekli Python kütüphaneleri:
 
