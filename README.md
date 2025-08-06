@@ -90,7 +90,7 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 ## License
 
-MIT License — free to use and modify.
+[MIT License](LICENCE) — free to use and modify.
 
 ## Contact
 
