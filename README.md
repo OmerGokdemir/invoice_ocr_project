@@ -103,7 +103,7 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 ## 📄 License
 
-[MIT License](LICENCE) — free to use and modify.
+[MIT License](LICENSE) — free to use and modify.
 
 ****
 
@@ -206,7 +206,7 @@ python extract_invoices.py
 
 ## 📄 Lisans
 
-[MIT License](LICENCE) — Ücretsiz olarak kullanılabilir ve değiştirilebilir.
+[MIT License](LICENSE) — Ücretsiz olarak kullanılabilir ve değiştirilebilir.
 
 ****
 
