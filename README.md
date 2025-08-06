@@ -3,7 +3,7 @@
 This Python project extracts key information from scanned PDF invoices using OCR (Optical Character Recognition) with **Tesseract** and image conversion tools.
 It reads PDF files from an input folder, extracts invoice details such as Invoice Number, Date, Total Amount, and Company Name, and saves the results into both CSV and Excel files.
 
-## Features
+## 🚀 Features
 
 *   Convert PDF pages to images for OCR processing
 
@@ -15,7 +15,9 @@ It reads PDF files from an input folder, extracts invoice details such as Invoic
 
 *   Easy to configure input/output directories and filenames
 
-## Requirements
+****
+
+## 📦 Requirements
 
 * Python 3.x
 
@@ -39,7 +41,9 @@ Install Python dependencies via pip:
 pip install pytesseract pdf2image pandas pillow openpyxl
 ```
 
-## Setup
+****
+
+## 🖥️ Setup
 
 1. Install Tesseract OCR:
    *   Download and install from the official repository.
@@ -54,6 +58,8 @@ pip install pytesseract pdf2image pandas pillow openpyxl
     python extract_invoices.py
     ```
 
+****
+
 ## Output
 
 *   `extracted_invoices.csv` — CSV file with extracted invoice data
@@ -61,7 +67,7 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 *   `extracted_invoices.xlsx` — Excel file with the same data for easier analysis
 
 
-## How it works
+## ⚙️ How it works
 
 *   Converts each page of the PDF into an image
 
@@ -71,13 +77,13 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 *   Aggregates data from all PDFs into structured tabular format
 
-## Customization
+## 👤 Customization
 
 *   Modify `INPUT_DIR`, `OUTPUT_CSV`, `OUTPUT_XLSX` in the script to change input/output paths
 
 *   Update regex patterns in `extract_data_from_text()` for different invoice formats or to extract additional fields
 
-## Troubleshooting
+## 🧪 Troubleshooting
 
 *   **No data extracted?**
     Check Tesseract OCR installation and paths
@@ -88,11 +94,11 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 *   **Performance issues?**
     Processing scanned PDFs can be slow; consider batching files or optimizing OCR parameters
 
-## License
+## 📄 License
 
 [MIT License](LICENCE) — free to use and modify.
 
-## Contact
+## 📩 Contact
 
 For questions or improvements, feel free to reach out!
 
