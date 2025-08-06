@@ -1,4 +1,4 @@
-# Invoice OCR Extraction
+# 🧾 Invoice OCR Extraction
 
 This Python project extracts key information from scanned PDF invoices using OCR (Optical Character Recognition) with **Tesseract** and image conversion tools.
 It reads PDF files from an input folder, extracts invoice details such as Invoice Number, Date, Total Amount, and Company Name, and saves the results into both CSV and Excel files.
@@ -60,7 +60,7 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 ****
 
-## Output
+## 📤 Output
 
 *   `extracted_invoices.csv` — CSV file with extracted invoice data
 
@@ -113,6 +113,106 @@ For questions or improvements, feel free to reach out!
 
 ****
 
-# Summary
+# 🧾 Fatura OCR Veri Çıkarımı
 
-This README will help users quickly understand the purpose of the project, how to set it up and run it, and how to customize it if needed — all in a clear, professional, yet approachable style. If you want, I can generate a markdown-ready `.md` file content too!
+Bu Python projesi, OCR (Optik Karakter Tanıma) kullanarak taranmış PDF faturalardan önemli bilgileri çıkartır. Tesseract ve görsel dönüştürme araçlarını kullanarak PDF dosyalarını işler, fatura numarası, tarih, toplam tutar ve şirket adı gibi bilgileri alır ve sonuçları CSV ve Excel dosyalarına kaydeder.
+
+## 🚀 Özellikler
+
+* PDF sayfalarını OCR işlemi için görsellere dönüştürür
+
+* Fatura verilerini çıkarır (Fatura Numarası, Tarih, Toplam Tutar, Şirket Adı)
+
+* Çıkarılan verileri CSV ve XLSX formatlarında kaydeder
+
+* Taranmış (görsel tabanlı) PDF’lerle çalışır
+
+* Girdi/çıktı dizinleri ve dosya adları kolayca yapılandırılabilir
+
+****
+
+## 📦 Gereksinimler
+
+* Python 3.x
+
+* Tesseract OCR yüklü ve sistem PATH’ine eklenmiş olmalı (ya da scriptte açıkça belirtilmeli)
+
+* Gerekli Python kütüphaneleri:
+
+```bash
+pip install pytesseract pdf2image pandas pillow openpyxl
+```
+
+****
+
+## 🖥️ Kurulum
+
+1. Tesseract OCR Kurulumu:
+
+    * Resmi Tesseract deposundan indirip yükleyin
+
+    * Eğer sistem PATH’ine eklenmediyse, script içerisindeki pytesseract.pytesseract.tesseract_cmd değişkenine Tesseract’ın kurulu olduğu dizini yazın
+
+2. Girdi PDF’leri:
+
+    * invoices adında bir klasör oluşturun (yoksa)
+
+    * Taranmış fatura PDF dosyalarınızı bu klasöre yerleştirin
+
+3. Scripti çalıştırın:
+
+```bash
+python extract_invoices.py
+```
+
+****
+
+## 📤 Çıktılar
+
+* `extracted_invoices.csv` — Çıkarılan fatura verilerini içeren CSV dosyası
+
+* `extracted_invoices.xlsx` — Excel formatında aynı veriler, analiz için daha uygun
+
+****
+
+## ⚙️ Nasıl Çalışır?
+
+* Her PDF sayfasını bir görsele dönüştürür
+
+* Görseldeki metni OCR ile çözümler
+
+* Metin içinden düzenli ifadeler (regex) ile fatura bilgilerini bulur
+
+* Tüm PDF’lerden alınan verileri tablo halinde birleştirir
+
+****
+## 👤 Özelleştirme
+
+* Girdi/çıktı klasörlerini ve dosya adlarını değiştirmek için scriptteki INPUT_DIR, OUTPUT_CSV, OUTPUT_XLSX değişkenlerini düzenleyin
+
+* Farklı fatura formatları için veya ek alanlar çıkartmak için extract_data_from_text() fonksiyonundaki regex desenlerini güncelleyin
+
+****
+
+## 🧪 Sorun Giderme
+
+* Veri çıkmıyor mu? → Tesseract OCR kurulumunu ve yollarını kontrol edin
+
+* Yanlış veya eksik veri mi çıkıyor? → Regex ifadelerini kendi fatura yapınıza göre uyarlayın
+
+* Performans yavaş mı? → PDF’leri toplu işleyin veya OCR parametrelerini optimize edin
+
+****
+
+## 📄 Lisans
+
+[MIT License](LICENCE) — Ücretsiz olarak kullanılabilir ve değiştirilebilir.
+
+****
+
+## 📩 İletişim
+
+Sorularınız ya da geliştirme önerileriniz için [benimle](@OmerGokdemir) iletişime geçebilirsiniz!
+
+****
+
