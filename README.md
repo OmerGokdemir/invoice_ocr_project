@@ -109,7 +109,7 @@ pip install pytesseract pdf2image pandas pillow openpyxl
 
 ## 📩 Contact
 
-For questions or improvements, feel free to reach out!
+Feel free to contact [me](https://github.com/OmerGokdemir) with questions or suggestions for improvements!
 
 ****
 
@@ -212,7 +212,7 @@ python extract_invoices.py
 
 ## 📩 İletişim
 
-Sorularınız ya da geliştirme önerileriniz için [benimle](@OmerGokdemir) iletişime geçebilirsiniz!
+Sorularınız ya da geliştirme önerileriniz için [benimle](https://github.com/OmerGokdemir) iletişime geçebilirsiniz!
 
 ****
 
